@@ -1,3 +1,4 @@
+import { DiVim } from "react-icons/di";
 import AboutDetailType from "../../../../types/type";
 
 const People: React.FC<{ detailArr: AboutDetailType[] }> = ({ detailArr }) => {
@@ -24,12 +25,18 @@ const People: React.FC<{ detailArr: AboutDetailType[] }> = ({ detailArr }) => {
             </p>
           </div>
           <div
-            className="w-[500px] h-[621.6px] flex-shrink-0 rounded-[2000px] bg-cover bg-center"
+            className={`w-[500px] h-[621.6px] flex-shrink-0 rounded-[2000px] bg-cover bg-center ${
+              index == 0 ? "relative" : ""
+            }`}
             style={{
               backgroundImage: `url(${detail.image})`,
               backgroundColor: "#D9D9D9",
             }}
-          ></div>
+          >
+            {index == 0 && (
+              <div className="w-[361.807px] h-[288.023px] flex-shrink-0 bg-[url('/images/aboutBlackCoffee.png')] bg-lightgray bg-no-repeat bg-[length:100.096%_150.602%] bg-[position:-0.174px_-66.511px] absolute -bottom-9 left-1/2 transform -translate-x-1/2"></div>
+            )}
+          </div>
         </div>
       ))}
     </div>

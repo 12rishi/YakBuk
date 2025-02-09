@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SecondSection = () => {
   return (
@@ -25,9 +26,12 @@ const SecondSection = () => {
             </div>
             <div className="flex  justify-center items-center gap-[0.625rem] px-[1.5rem] py-[0.75rem] w-[10rem] rounded-[1.5rem] bg-[#0B5B32]">
               {" "}
-              <button className="text-white font-poppins text-[1rem] font-medium leading-[1.625rem]  ">
+              <Link
+                to="/about"
+                className="text-white font-poppins text-[1rem] font-medium leading-[1.625rem]  "
+              >
                 Learn more
-              </button>
+              </Link>
             </div>
           </div>
           <div className="w-[33.5rem] h-[29.9375rem] shrink-0 bg-[url('/images/headerCup.png')] bg-cover bg-no-repeat bg-center "></div>

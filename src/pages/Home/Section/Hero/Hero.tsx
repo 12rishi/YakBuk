@@ -2,9 +2,10 @@ import React from "react";
 import Navbar from "../../../../components/layout/Navbar";
 
 const Hero = () => {
-  return <>
-     <div
-        className="w-full absolute h-[60rem] p-3 bg-cover bg-center bg-no-repeat"
+  return (
+    <>
+      <div
+        className="w-[100vw] absolute h-[60rem] p-3 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
             "radial-gradient(26.81% 44.26% at 50.48% 11.56%, rgba(0, 0, 0, 0) 0%, rgba(0, 11, 0, 0.72) 0%),url('/images/headerbackground.png')",
@@ -78,7 +79,8 @@ const Hero = () => {
           <div className="absolute top-[0.625rem] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[42.5rem] h-[31.375rem] bg-[url('/images/headeryakbukCup.png')] bg-cover bg-no-repeat"></div>
         </div>
       </div>
-  </>;
+    </>
+  );
 };
 
 export default Hero;

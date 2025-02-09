@@ -24,7 +24,12 @@ const Detail: React.FC<{ ourValuesSec: OurValuesSection[] }> = ({
           <>
             <>
               <div className="flex flex-col items-center gap-[17px] w-[187px] h-[297px]">
-                {value?.image}
+                <div
+                  className="w-[40px] h-[60px] bg-cover p-5 "
+                  style={{
+                    backgroundImage: `url(${value.image})`,
+                  }}
+                ></div>
                 <h4 className="text-center text-black font-medium text-[24px] leading-[39px] font-[Poppins] self-stretch">
                   {value.header}
                 </h4>
