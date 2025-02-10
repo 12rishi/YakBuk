@@ -1,6 +1,7 @@
 import React from "react";
 import CupWithLogo from "../../layout/CupWithLogo";
 import { Link, Element } from "react-scroll";
+import { FaArrowUp } from "react-icons/fa";
 
 interface Items {
   itemName: string;
@@ -12,6 +13,9 @@ interface MenuItems {
   heading: string;
   paragraph: string;
   items: Items[];
+}
+function moveUpward() {
+  window.scrollTo(0, 0);
 }
 
 const MenuOverview: React.FC<{ menuItems: MenuItems[] }> = ({ menuItems }) => {
@@ -78,6 +82,12 @@ const MenuOverview: React.FC<{ menuItems: MenuItems[] }> = ({ menuItems }) => {
           </Element>
         ))}
       </div>
+      <button
+        onClick={moveUpward}
+        className="fixed bottom-5 right-5 bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition duration-300"
+      >
+        <FaArrowUp size={20} />
+      </button>
     </div>
   );
 };

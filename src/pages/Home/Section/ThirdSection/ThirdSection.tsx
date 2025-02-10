@@ -1,6 +1,38 @@
-import React from "react";
-
+import React, { useState } from "react";
+interface TextArr {
+  headinng: string | null;
+  detail: string | null;
+}
 const ThirdSection = () => {
+  const [number, setNumber] = useState<number>(1);
+  const text = [
+    {
+      heading: "Everest Expresso",
+      detail:
+        "A strong bold espresso served in a cup of the highest quality beans from local farms",
+    },
+    {
+      heading: "Yak Butter Coffeee",
+      detail:
+        "A traditional Himalayan Brew,rich with butter and coffee,perfect for high-altitude energy",
+    },
+    {
+      heading: "Sherpa's Hot Chocolate",
+      detail:
+        "Rich creamy hot chocolate made with high-quality cocoa and a touch of Himalayan salt.",
+    },
+    {
+      heading: "Mountaintop Mocha",
+      detail:
+        "A smooth mocha made with espresso ,chocoltae,and a dash of Himalayan sea salt for a unique flavor.",
+    },
+  ];
+  const increaseNumber = () => {
+    setNumber((prev) => (prev >= 4 ? 1 : prev + 1));
+  };
+  const decreseNumber = () => {
+    setNumber((prev) => (prev <= 1 ? 4 : prev - 1));
+  };
   return (
     <>
       <div className="relative w-[1728px] h-[1268px]">
@@ -20,12 +52,11 @@ const ThirdSection = () => {
               <span className=" text-[#A76E50] text-center font-poppins text-[48px] font-normal leading-[78px] ">
                 For You
               </span>
-              <div className="w-[360px] text-[#FFF] text-center font-poppins text-[36px] font-normal leading-[58px] tracking-[4.32px]">
-                <p>Everest Expresso</p>
+              <div className="w-[500px] text-[#FFF]  font-poppins text-[36px] font-normal leading-[58px] tracking-[4.32px]">
+                <p>{text[number - 1].heading}</p>
               </div>
               <div className="w-[296px] text-[#E6E5E6] font-poppins text-[16px] font-normal leading-[26px]">
-                A strong, bold espresso served in a cup of the highest quality
-                beans from local farms.
+                {text[number - 1].detail}
               </div>
               <button className="flex justify-center items-center gap-2 px-6 py-2 rounded-[24px] bg-[#A76E50] text-[#fff]">
                 See All
@@ -38,7 +69,8 @@ const ThirdSection = () => {
                   height="25"
                   viewBox="0 0 24 25"
                   fill="none"
-                  className="w-6 h-6"
+                  className="w-6 h-6 cursor-pointer"
+                  onClick={decreseNumber}
                 >
                   <path
                     d="M19 12.5H5M5 12.5L12 19.5M5 12.5L12 5.5"
@@ -52,7 +84,7 @@ const ThirdSection = () => {
                 {/* 1/4 */}
                 <div className="flex items-center justify-center relative">
                   <p className="text-white font-poppins text-[18px] font-medium leading-[32px] tracking-[3.24px] absolute top-[-30px]">
-                    1
+                    {number}
                   </p>
                   <div className="w-[48px] h-[1px] bg-[#4A494B] rotate-[-45deg]"></div>
                   <p className="text-[#4A494B] font-poppins text-[18px] font-medium leading-[32px] tracking-[3.24px] absolute bottom-[-30px]">
@@ -66,7 +98,8 @@ const ThirdSection = () => {
                   width="24"
                   height="24"
                   viewBox="0 0 25 25"
-                  className="w-6 h-6"
+                  className="w-6 h-6 cursor-pointer"
+                  onClick={increaseNumber}
                 >
                   <path
                     d="M5.27148 12.5H19.2715M19.2715 12.5L12.2715 5.5M19.2715 12.5L12.2715 19.5"
@@ -82,6 +115,7 @@ const ThirdSection = () => {
           <div className="w-[511.893px] h-[511.893px] flex-shrink-0 bg-[url('/images/blankcup.png')] bg-cover relative">
             <div className="w-[172.065px] h-[172.065px] flex-shrink-0 bg-[url('/images/logo.png')] bg-lightgray bg-cover bg-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
           </div>
+          <div className="w-[716px] h-[606px] absolute right-0 -z-10 flex-shrink-0 bg-[url('/images/beans.png')] bg-cover bg-center bg-no-repeat"></div>
         </div>
       </div>
     </>

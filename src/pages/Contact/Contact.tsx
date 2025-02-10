@@ -5,8 +5,8 @@ import Navbar from "../../components/layout/Navbar";
 const Contact = () => {
   return (
     <>
-      <div className="w-[1728px] h-[1500px] flex-shrink-0 bg-[#084525] relative">
-        <div className="absolute top-6 w-full mx-auto">
+      <div className="w-[100vw] h-[1500px] flex-shrink-0 bg-[#084525] relative">
+        <div className="absolute top-6 w-[100vw] mx-auto">
           <Navbar />
         </div>
         <div className="flex w-[1306px] items-center gap-[149px] relative top-[25%]  mx-auto">

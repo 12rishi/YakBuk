@@ -12,7 +12,7 @@ const Card: React.FC<{ ventureData: VentureData[] }> = ({ ventureData }) => {
         {ventureData.map((data: VentureData, index) => (
           <div className="flex w-[100vw] items-center justify-center mt-10">
             <div
-              className={`inline-flex items-center align-middle gap-72 w-[1189px] h-[622px] ${
+              className={`inline-flex items-center align-middle gap-72 w-[90vw] h-[622px] ${
                 index == 1 && "flex-row-reverse"
               } `}
             >

@@ -5,10 +5,10 @@ const Hero = () => {
   return (
     <>
       <div
-        className="w-[100vw] absolute h-[60rem] p-3 bg-cover bg-center bg-no-repeat"
+        className="w-[100vw] absolute h-[60rem] p-3 bg-cover bg-center bg-no-repeat "
         style={{
           backgroundImage:
-            "radial-gradient(26.81% 44.26% at 50.48% 11.56%, rgba(0, 0, 0, 0) 0%, rgba(0, 11, 0, 0.72) 0%),url('/images/headerbackground.png')",
+            "radial-gradient(26.81% 44.26% at 50.48% 11.56%, rgba(0, 0, 0, 0) 0%, rgba(0, 11, 0, 0.72) 0%),url('/images/headerbackground.png') ",
         }}
       >
         <Navbar />
@@ -53,7 +53,6 @@ const Hero = () => {
             </figure>
             <div className="mb-16 absolute  bottom-4">
               {" "}
-              {/* Moves text closer to image */}
               <p className="flex items-center font-poppins font-medium text-sm leading-6 tracking-[0.16em] text-[#FFFFFF]">
                 <span className="flex-1 h-[2px] bg-[#4A494B]"></span>
                 <span className="px-2">100%</span>
@@ -66,7 +65,6 @@ const Hero = () => {
           </div>
         </div>
         <div className="absolute bottom-0 w-[107.5rem] h-[9.5rem]">
-          {/* SVG Background */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1728 154"
@@ -75,7 +73,6 @@ const Hero = () => {
             <path d="M863.5 1L0 153H1728L863.5 1Z" />
           </svg>
 
-          {/* Centered Image */}
           <div className="absolute top-[0.625rem] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[42.5rem] h-[31.375rem] bg-[url('/images/headeryakbukCup.png')] bg-cover bg-no-repeat"></div>
         </div>
       </div>

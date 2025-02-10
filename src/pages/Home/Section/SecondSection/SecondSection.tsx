@@ -7,13 +7,20 @@ const SecondSection = () => {
       <div className="w-11/12 mx-auto">
         <div className="grid grid-cols-3 items-center w-full text-black p-5 ">
           <div className="w-[325.772px] h-[405px] rounded-[2000px] bg-[url('/images/couple.jpeg')] bg-cover  "></div>
-          <div className="w-[619px] flex flex-col align-middle  items-center gap-[48px]">
+          <div className="w-[619px] flex flex-col items-center gap-[48px]">
+            {/* Heading */}
             <div className="self-stretch text-[#A76E50] text-center font-poppins text-[1.5rem] font-normal leading-[2.4375rem] tracking-[0.18rem]">
               Our Journey of{" "}
               <span className="text-[#A76E50] block font-poppins text-[2.25rem] font-normal leading-[3.625rem] tracking-[0.27rem]">
                 Love & Coffee
               </span>
+              {/* Centered Line */}
+              <div className="w-full flex justify-center">
+                <div className="w-[36px] h-[1px] bg-[#A76E50]"></div>
+              </div>
             </div>
+
+            {/* Description */}
             <div className="text-[#303031] text-center font-poppins text-[1rem] font-normal leading-[1.625rem]">
               Yak Buck isn’t just a café—it’s a dream brewed with love, built by
               a husband and wife who share a passion for coffee and the
@@ -24,16 +31,18 @@ const SecondSection = () => {
               carries our story—a story of love, adventure, and a deep-rooted
               connection to the Himalayas.
             </div>
-            <div className="flex  justify-center items-center gap-[0.625rem] px-[1.5rem] py-[0.75rem] w-[10rem] rounded-[1.5rem] bg-[#0B5B32]">
-              {" "}
+
+            {/* Button */}
+            <div className="flex justify-center items-center gap-[0.625rem] px-[1.5rem] py-[0.75rem] w-[10rem] rounded-[1.5rem] bg-[#0B5B32]">
               <Link
                 to="/about"
-                className="text-white font-poppins text-[1rem] font-medium leading-[1.625rem]  "
+                className="text-white font-poppins text-[1rem] font-medium leading-[1.625rem]"
               >
                 Learn more
               </Link>
             </div>
           </div>
+
           <div className="w-[33.5rem] h-[29.9375rem] shrink-0 bg-[url('/images/headerCup.png')] bg-cover bg-no-repeat bg-center "></div>
         </div>
         <div className="grid grid-cols-3 items-center  w-full p-5 mt-36 ml-20 gap-18">
