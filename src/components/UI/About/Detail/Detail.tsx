@@ -19,7 +19,7 @@ const Detail: React.FC<{ ourValuesSec: OurValuesSection[] }> = ({
         </h3>
         <div className="w-[36px] h-[1px] bg-[#A76E50]"></div>
       </div>
-      <div className="w-[100vw] flex justify-between px-4 py-4 ">
+      <div className="w-[100vw] flex justify-between px-4 py-4 sm:w-[100vw]">
         {ourValuesSec.map((value: OurValuesSection, index) => (
           <>
             <>

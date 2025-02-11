@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 const SecondSection = () => {
   return (
     <>
-      <div className="w-11/12 mx-auto">
-        <div className="grid grid-cols-3 items-center w-full text-black p-5 ">
-          <div className="w-[325.772px] h-[405px] rounded-[2000px] bg-[url('/images/couple.jpeg')] bg-cover  "></div>
-          <div className="w-[619px] flex flex-col items-center gap-[48px]">
+      <div className="w-11/12 mx-auto sm:w-[100vw] md:w-[100vw] lg:w-11/12">
+        <div className="grid lg:grid-cols-3 lg:w-full text-black p-5 sm:w-[100vw] sm:mx-auto lg:mx-0 sm:grid-cols-1 ">
+          <div className="w-[325.772px] h-[405px] rounded-[2000px] bg-[url('/images/couple.jpeg')] bg-cover sm:hidden lg:block "></div>
+          <div className="w-[619px] grid grid-rows-3 place-items-center gap-[12px] sm:ml-11 lg:ml-0 ">
             {/* Heading */}
             <div className="self-stretch text-[#A76E50] text-center font-poppins text-[1.5rem] font-normal leading-[2.4375rem] tracking-[0.18rem]">
               Our Journey of{" "}
-              <span className="text-[#A76E50] block font-poppins text-[2.25rem] font-normal leading-[3.625rem] tracking-[0.27rem]">
+              <span className="text-[#A76E50] block font-poppins text-[2.25rem] font-normal leading-[3.625rem] tracking-[0.27rem] sm:font-light md:font-light">
                 Love & Coffee
               </span>
               {/* Centered Line */}
@@ -21,7 +21,7 @@ const SecondSection = () => {
             </div>
 
             {/* Description */}
-            <div className="text-[#303031] text-center font-poppins text-[1rem] font-normal leading-[1.625rem]">
+            <div className="text-[#303031] text-center font-poppins lg:text-[1rem] font-normal leading-[1.625rem] sm:text-[0.9rem] ">
               Yak Buck isn’t just a café—it’s a dream brewed with love, built by
               a husband and wife who share a passion for coffee and the
               mountains. What started as an idea over countless cups of coffee
@@ -43,9 +43,9 @@ const SecondSection = () => {
             </div>
           </div>
 
-          <div className="w-[33.5rem] h-[29.9375rem] shrink-0 bg-[url('/images/headerCup.png')] bg-cover bg-no-repeat bg-center "></div>
+          <div className="w-[33.5rem] h-[29.9375rem] shrink-0 bg-[url('/images/headerCup.png')] bg-cover bg-no-repeat bg-center sm:hidden lg:block"></div>
         </div>
-        <div className="grid grid-cols-3 items-center  w-full p-5 mt-36 ml-20 gap-18">
+        <div className="grid grid-cols-3 place-items-center  w-full p-5 mt-36 lg:ml-20 gap-18 sm:gap-2 sm:ml-0">
           <div className="flex flex-col items-center gap-2.5 w-[241px]">
             <div className="relative w-[80px] h-[80px]">
               <svg
@@ -89,7 +89,7 @@ const SecondSection = () => {
                 </defs>
               </svg>
             </div>
-            <div className="text-[#303031] font-poppins text-[1.125rem] font-medium leading-[2rem] tracking-[0.2025rem]">
+            <div className="text-[#303031] font-poppins lg:text-[1.125rem] font-medium leading-[2rem] tracking-[0.2025rem] sm:text-[1rem]">
               Nepalese Coffee
             </div>
           </div>
@@ -120,7 +120,7 @@ const SecondSection = () => {
               </svg>
             </div>
 
-            <div className="text-[#303031] font-poppins text-[1.125rem] font-medium leading-[2rem] tracking-[0.2025rem]">
+            <div className="text-[#303031] font-poppins lg:text-[1.125rem] font-medium leading-[2rem] tracking-[0.2025rem] sm:text-[1rem]">
               Rigorous Selection
             </div>
           </div>
@@ -149,7 +149,7 @@ const SecondSection = () => {
               </svg>
             </div>
 
-            <div className="text-[#303031] font-poppins text-[1.125rem] font-medium leading-[2rem] tracking-[0.2025rem]">
+            <div className="text-[#303031] font-poppins lg:text-[1.125rem] font-medium leading-[2rem] tracking-[0.2025rem] sm:text-[1rem]">
               Vacuum Packing
             </div>
           </div>

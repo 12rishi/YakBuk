@@ -12,7 +12,7 @@ const FindUsCard = () => {
           <p className="w-[39.75rem] text-white font-[Poppins] text-[1rem] font-normal leading-[1.625rem]">
             Experience the perfect blend of coffee and mountain hospitality
           </p>
-          <button className="inline-flex px-[1.375rem] py-[0.75rem] justify-center items-center gap-[0.625rem] rounded-[1.5rem] bg-[#A76E50]">
+          <button className="inline-flex px-[1.375rem] py-[0.75rem] justify-center items-center gap-[0.625rem] rounded-[1.5rem] bg-[#A76E50] text-[#fff]">
             Find Us
           </button>
         </div>

@@ -1,12 +1,11 @@
 const SeventhSection = () => {
   return (
     <>
-      <div className="w-[1728px] relative h-[500px] flex-shrink-0 bg-[linear-gradient(0deg,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.20)_100%),url('/images/map.png')] bg-cover bg-center bg-no-repeat mt-36">
-        {/* SVG at the top */}
-        <div className="w-[1728px] h-[190px] flex-shrink-0 absolute">
+      <div className="w-[100vw] relative lg:h-[500px] sm:h-[300px] flex-shrink-0 bg-[linear-gradient(0deg,rgba(0,0,0,0.20)_0%,rgba(0,0,0,0.20)_100%),url('/images/map.png')] bg-cover bg-center bg-no-repeat mt-36">
+        <div className="lg:w-[1728px] h-[190px] flex-shrink-0 -top-4 absolute sm:hidden md:hidden lg:block sm:w-[100vw] md:w-[100vw]  ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-full h-full"
+            className="w-full h-full sm:hidden lg:block md:block"
             viewBox="0 0 1728 190"
             fill="none"
           >
@@ -17,8 +16,7 @@ const SeventhSection = () => {
           </svg>
         </div>
 
-        {/* Centered content */}
-        <div className="absolute inset-0 flex items-center justify-center top-1/2">
+        <div className="absolute inset-0 flex items-center justify-center lg:top-1/2 sm:top-2/4 sm:left-30">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-[30px] h-[30px] flex-shrink-0"
@@ -40,7 +38,7 @@ const SeventhSection = () => {
               strokeLinejoin="round"
             />
           </svg>
-          <div className="w-[2px] h-[170px] bg-[#0D713D] absolute bottom-0 top-4/8"></div>
+          <div className="w-[2px] lg:h-[170px] sm:h-[100px] bg-[#0D713D] absolute bottom-0 top-4/8"></div>
         </div>
       </div>
     </>

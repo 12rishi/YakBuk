@@ -8,11 +8,11 @@ interface VentureData {
 const Card: React.FC<{ ventureData: VentureData[] }> = ({ ventureData }) => {
   return (
     <>
-      <div className="flex flex-col gap-16">
+      <div className="grid grid-rows-2 gap-16 w-[100vw]">
         {ventureData.map((data: VentureData, index) => (
-          <div className="flex w-[100vw] items-center justify-center mt-10">
+          <div className="grid grid-cols-2 w-[100vw] mt-10 p-4">
             <div
-              className={`inline-flex items-center align-middle gap-72 w-[90vw] h-[622px] ${
+              className={`inline-flex items-center align-middle gap-72 w-[90vw] h-[622px]  ${
                 index == 1 && "flex-row-reverse"
               } `}
             >

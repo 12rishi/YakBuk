@@ -87,10 +87,10 @@ const About = () => {
         paragraph="Where passion for Coffee meets Himalayan hospitality"
       />
       <People detailArr={detailArr} />
-      <Detail ourValuesSec={ourValuesSec} />
+      {/* <Detail ourValuesSec={ourValuesSec} />
       <HorizontalButton horizontalButtonData={horizontalButtonData} />
-      <FindUsCard />
-      <Footer />
+      <FindUsCard /> */}
+      {/* <Footer /> */}
     </>
   );
 };

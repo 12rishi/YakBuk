@@ -5,11 +5,11 @@ import Navbar from "../../components/layout/Navbar";
 const Contact = () => {
   return (
     <>
-      <div className="w-[100vw] h-[1500px] flex-shrink-0 bg-[#084525] relative">
+      <div className="w-[100vw] h-[200vh] flex-shrink-0 bg-[#084525] relative">
         <div className="absolute top-6 w-[100vw] mx-auto">
           <Navbar />
         </div>
-        <div className="flex w-[1306px] items-center gap-[149px] relative top-[25%]  mx-auto">
+        <div className="flex w-[100vw] items-center gap-[149px] relative top-[25%]  mx-auto sm:flex-col lg:flex-row ">
           <div className="flex flex-col w-[620px]">
             <h3 className="self-stretch text-[#A76E50] text-center font-poppins text-4xl font-normal leading-[78px]">
               Get in touch{" "}
