@@ -1,5 +1,3 @@
-import React from "react";
-
 const FindUsCard = () => {
   return (
     <div className="w-full h-auto flex-shrink-0 bg-[#084525] flex flex-col items-center justify-center mt-36 py-16 px-4">

@@ -1,5 +1,3 @@
-import React from "react";
-
 const FifthSection = () => {
   return (
     <div className="relative w-[100vw] h-[60vh] flex-shrink-0 -z-10 overflow-hidden flex flex-col items-center justify-center">

@@ -10,7 +10,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import Navbar from "../../components/layout/Navbar";
 import Slider from "react-slick";
 import Carousel from "../../components/UI/About/Carousel/Carousel";
 

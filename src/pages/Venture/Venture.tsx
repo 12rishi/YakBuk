@@ -1,4 +1,3 @@
-import React from "react";
 import Background from "../../components/layout/Background";
 import Card from "../../components/UI/venture/Card";
 import Footer from "../../components/layout/Footer";

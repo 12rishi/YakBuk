@@ -1,4 +1,3 @@
-import { Divide } from "lucide-react";
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";

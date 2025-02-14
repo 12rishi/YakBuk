@@ -78,7 +78,7 @@ const MenuOverview: React.FC<{ menuItems: MenuItems[] }> = ({ menuItems }) => {
       </div>
       <div className="mx-auto grid grid-cols-1 justify-items-center w-[100%]">
         {menuItems.map((data, index) => (
-          <Element name={index} key={index}>
+          <Element name={String(index)} key={index}>
             <div className="w-[70vw] h-[40.81rem] flex flex-col items-center lg:mt-2.5 sm:mt-[4rem] ">
               <h2 className="self-stretch text-center text-[#A76E50] font-poppins text-[2.25rem] font-normal leading-[3.625rem] tracking-[0.27rem] w-full">
                 {data.heading}
@@ -122,7 +122,7 @@ const MenuOverview: React.FC<{ menuItems: MenuItems[] }> = ({ menuItems }) => {
                     key={idx}
                     className="flex flex-col w-[26.38rem] h-[40.81rem] items-center"
                   >
-                    <CupWithLogo />
+                    <CupWithLogo val={"menu"} />
                     <h3 className="self-stretch text-center text-[#0D0D0D] font-poppins text-[1.75rem] font-medium leading-[2.813rem]">
                       {val.itemName}
                     </h3>

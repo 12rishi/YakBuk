@@ -1,10 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CupWithLogo from "../../../../components/layout/CupWithLogo";
-
-interface TextArr {
-  heading: string | null;
-  detail: string | null;
-}
 
 const ThirdSection = () => {
   const [number, setNumber] = useState<number>(1);
