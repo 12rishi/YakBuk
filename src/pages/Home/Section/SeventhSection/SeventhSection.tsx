@@ -16,7 +16,7 @@ const SeventhSection = () => {
           </svg>
         </div>
 
-        <div className="absolute inset-0 flex items-center justify-center lg:top-1/2 sm:top-2/4 sm:left-30">
+        <div className="absolute inset-0 flex items-center justify-center lg:top-1/2 sm:top-2/5 sm:left-30">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-[30px] h-[30px] flex-shrink-0"

@@ -6,8 +6,27 @@ import Detail from "../../components/UI/About/Detail/Detail";
 import People from "../../components/UI/About/Detail/People";
 import FindUsCard from "../../components/UI/About/FindUs/FindUsCard";
 import HorizontalButton from "../../components/UI/About/HorizontalButton/HorizontalButton";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+import Navbar from "../../components/layout/Navbar";
+import Slider from "react-slick";
+import Carousel from "../../components/UI/About/Carousel/Carousel";
 
 const About = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    arrows: true,
+    prevArrow: <ChevronLeft color="black" className="z-20" />,
+    nextArrow: <ChevronRight color="black" className="z-20" />,
+
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   const detailArr = [
     {
       name: "From",
@@ -86,11 +105,36 @@ const About = () => {
         heading="Our Story"
         paragraph="Where passion for Coffee meets Himalayan hospitality"
       />
+
       <People detailArr={detailArr} />
-      {/* <Detail ourValuesSec={ourValuesSec} />
-      <HorizontalButton horizontalButtonData={horizontalButtonData} />
-      <FindUsCard /> */}
-      {/* <Footer /> */}
+      <Detail ourValuesSec={ourValuesSec} />
+      <div className="sm:hidden lg:block">
+        <HorizontalButton horizontalButtonData={horizontalButtonData} />
+      </div>
+
+      <div className="lg:hidden md:block sm:block  w-[100vw]  flex items-center justify-center   ">
+        <div className="text-center">
+          <h4 className="text-[#A76E50] font-poppins text-xl font-normal leading-[39px] tracking-[2.88px]">
+            Meet
+          </h4>
+          <h3 className="text-[#A76E50] font-poppins text-4xl font-normal leading-[58px] tracking-[4.32px]">
+            Our Team
+          </h3>
+          <div className="w-[36px] h-[1px] bg-[#A76E50] mx-auto mb-11"></div>
+        </div>
+
+        <Slider
+          {...settings}
+          className="sm:flex md:flex lg:hidden w-[80vw] mx-auto text-black h-[50vh] bg-[#084525] "
+        >
+          {horizontalButtonData.map((data) => (
+            <Carousel data={data} />
+          ))}
+        </Slider>
+      </div>
+
+      <FindUsCard />
+      <Footer />
     </>
   );
 };

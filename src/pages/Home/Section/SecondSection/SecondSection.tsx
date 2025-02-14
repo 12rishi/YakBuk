@@ -4,24 +4,24 @@ import { Link } from "react-router-dom";
 const SecondSection = () => {
   return (
     <>
-      <div className="w-11/12 mx-auto sm:w-[100vw] md:w-[100vw] lg:w-11/12">
-        <div className="grid lg:grid-cols-3 lg:w-full text-black p-5 sm:w-[100vw] sm:mx-auto lg:mx-0 sm:grid-cols-1 ">
+      <div className="w-11/12 mx-auto sm:w-full md:w-[100vw] lg:w-11/12  md:mt-6">
+        <div className="grid lg:grid-cols-3 lg:w-full text-black lg:p-5 sm:w-full sm:mx-auto lg:mx-0 sm:grid-cols-1 sm:p-2 ">
           <div className="w-[325.772px] h-[405px] rounded-[2000px] bg-[url('/images/couple.jpeg')] bg-cover sm:hidden lg:block "></div>
-          <div className="w-[619px] grid grid-rows-3 place-items-center gap-[12px] sm:ml-11 lg:ml-0 ">
+          <div className="lg:w-[619px] sm:w-full grid grid-rows-3 place-items-center sm:-space-y-8 lg:gap-[12px] sm:gap-8 md:space-y-8 md:gap-10  lg:ml-0">
             {/* Heading */}
-            <div className="self-stretch text-[#A76E50] text-center font-poppins text-[1.5rem] font-normal leading-[2.4375rem] tracking-[0.18rem]">
+            <div className="self-stretch text-[#A76E50] text-center font-poppins text-[1.5rem] font-normal leading-[2.4375rem] tracking-[0.18rem] sm:h-[10vh]">
               Our Journey of{" "}
-              <span className="text-[#A76E50] block font-poppins text-[2.25rem] font-normal leading-[3.625rem] tracking-[0.27rem] sm:font-light md:font-light">
+              <span className="text-[#A76E50] block font-poppins text-[2.25rem] font-normal sm:leading-[2rem] lg:leading-[3.625rem] tracking-[0.27rem] sm:font-light md:font-light">
                 Love & Coffee
               </span>
               {/* Centered Line */}
-              <div className="w-full flex justify-center">
+              <div className="w-full flex justify-center mt-2">
                 <div className="w-[36px] h-[1px] bg-[#A76E50]"></div>
               </div>
             </div>
 
             {/* Description */}
-            <div className="text-[#303031] text-center font-poppins lg:text-[1rem] font-normal leading-[1.625rem] sm:text-[0.9rem] ">
+            <div className="text-[#303031] text-center font-poppins lg:text-[1rem] font-normal leading-[1.625rem] sm:text-[0.8rem] sm:w-[80vw] lg:w-[40vw] lg:mt-4 sm:-mt-10">
               Yak Buck isn’t just a café—it’s a dream brewed with love, built by
               a husband and wife who share a passion for coffee and the
               mountains. What started as an idea over countless cups of coffee
@@ -33,7 +33,7 @@ const SecondSection = () => {
             </div>
 
             {/* Button */}
-            <div className="flex justify-center items-center gap-[0.625rem] px-[1.5rem] py-[0.75rem] w-[10rem] rounded-[1.5rem] bg-[#0B5B32]">
+            <div className="flex justify-center items-center gap-[0.625rem] px-[1.5rem] py-[0.75rem] w-[10rem] rounded-[1.5rem] bg-[#0B5B32] mt-4">
               <Link
                 to="/about"
                 className="text-white font-poppins text-[1rem] font-medium leading-[1.625rem]"
@@ -45,9 +45,9 @@ const SecondSection = () => {
 
           <div className="w-[33.5rem] h-[29.9375rem] shrink-0 bg-[url('/images/headerCup.png')] bg-cover bg-no-repeat bg-center sm:hidden lg:block"></div>
         </div>
-        <div className="grid grid-cols-3 place-items-center  w-full p-5 mt-36 lg:ml-20 gap-18 sm:gap-2 sm:ml-0">
-          <div className="flex flex-col items-center gap-2.5 w-[241px]">
-            <div className="relative w-[80px] h-[80px]">
+        <div className="grid grid-cols-3 place-items-center  w-full p-5 lg:mt-36 sm:mt-20 lg:ml-20 gap-18 sm:justify-items-center sm:gap-6 sm:ml-0">
+          <div className="flex flex-col items-center s gap-2.5  w-full">
+            <div className="relative w-[80px] h-[80px] ">
               <svg
                 className="absolute inset-0 w-[50px] h-[50px] flex-shrink-0 fill-[#DAFBEA] m-auto"
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,11 +89,11 @@ const SecondSection = () => {
                 </defs>
               </svg>
             </div>
-            <div className="text-[#303031] font-poppins lg:text-[1.125rem] font-medium leading-[2rem] tracking-[0.2025rem] sm:text-[1rem]">
+            <div className="text-[#303031] font-poppins lg:text-[1.125rem] font-medium leading-[2rem] sm:tracking-[0.1rem] lg:tracking-[0.2025rem] sm:text-[8px] md:text-[1rem] break-words">
               Nepalese Coffee
             </div>
           </div>
-          <div className="flex flex-col items-center gap-2.5 w-[241px]">
+          <div className="flex flex-col items-center gap-2.5 w-full">
             <div className="relative w-[80px] h-[80px]">
               {/* Background Circle (Absolute) */}
               <svg
@@ -120,11 +120,11 @@ const SecondSection = () => {
               </svg>
             </div>
 
-            <div className="text-[#303031] font-poppins lg:text-[1.125rem] font-medium leading-[2rem] tracking-[0.2025rem] sm:text-[1rem]">
+            <div className="text-[#303031] font-poppins lg:text-[1.125rem] sm:tracking-[0.1rem] font-medium sm:leading-[1rem] lg:leading-[2rem] lg:tracking-[0.2025rem] md:text-[1rem] sm:text-[8px] sm:text-center ">
               Rigorous Selection
             </div>
           </div>
-          <div className="flex flex-col items-center gap-2.5 w-[241px]">
+          <div className="flex flex-col items-center gap-2.5 w-full">
             <div className="relative w-[80px] h-[80px]">
               {/* Background Circle */}
               <svg
@@ -149,7 +149,7 @@ const SecondSection = () => {
               </svg>
             </div>
 
-            <div className="text-[#303031] font-poppins lg:text-[1.125rem] font-medium leading-[2rem] tracking-[0.2025rem] sm:text-[1rem]">
+            <div className="text-[#303031] font-poppins sm:tracking-[0.1rem] lg:text-[1.125rem] font-medium leading-[2rem] lg:tracking-[0.2025rem] sm:text-[8px] md:text-[1rem]">
               Vacuum Packing
             </div>
           </div>

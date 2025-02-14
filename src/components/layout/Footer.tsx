@@ -4,16 +4,16 @@ import { FiFacebook } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <div className="w-[100vw] lg:h-[31.25rem]   bg-[#052E19] flex flex-col justify-center items-center py-[1.5rem] px-[4.5rem] sm:h-[30%]  ">
-      <div className="flex justify-between lg:w-[83.33%] items-center sm:w-[100vw] sm:p-2 lg:p-0">
-        <div className="flex flex-col items-start w-[15.3125rem] gap-[0.9375rem]">
-          <h4 className="self-stretch text-[#FFF] font-[Poppins] lg:text-[1.5rem] font-medium leading-[2.4375rem] sm:text-[16px]">
+    <div className="w-[100vw] lg:h-[31.25rem] bg-[#052E19] flex flex-col justify-center items-center py-[1.5rem] px-[4.5rem] sm:h-auto sm:px-[1rem]">
+      <div className="lg:flex  lg:justify-evenly  lg:w-[100%]  items-center sm:w-full sm:flex-col sm:gap-16 md:flex-row md:gap-12">
+        <div className="flex flex-col lg:items-start  lg:w-[20%] gap-[0.9375rem] sm:w-full sm:items-center md:items-center md:w-full">
+          <h4 className="self-stretch text-[#FFF] font-[Poppins] lg:text-[1.5rem] font-medium leading-[2.4375rem] sm:text-[1.25rem] sm:text-center lg:text-start md:text-center">
             Contact
           </h4>
-          <p className="flex items-center">
+          <p className="flex items-center m">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:w-[1.5rem] h-[1.5rem] fill-none sm:w-[18px]"
+              className="lg:w-[1.5rem] h-[1.5rem] fill-none sm:w-[1rem]"
               viewBox="0 0 24 24"
             >
               <path
@@ -24,14 +24,14 @@ const Footer = () => {
                 strokeLinejoin="round"
               />
             </svg>
-            <span className="text-[#FFF] text-center font-[Poppins] lg:text-[1rem] font-normal leading-[1.625rem] ml-[0.125rem] sm:text-[12px]">
+            <span className="text-[#FFF] text-center font-[Poppins] lg:text-[1rem] font-normal leading-[1.625rem] ml-[0.125rem] sm:text-[0.875rem]">
               +977 123-456-789
             </span>
           </p>
           <p className="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:w-[1.5rem] h-[1.5rem] sm:w-[18px]"
+              className="lg:w-[1.5rem] h-[1.5rem] sm:w-[1rem]"
               viewBox="0 0 24 24"
               fill="none"
             >
@@ -44,34 +44,40 @@ const Footer = () => {
               />
             </svg>
 
-            <span className="text-[#FFF] text-center font-[Poppins] lg:text-[1rem] font-normal leading-[1.625rem] ml-[0.125rem] sm:text-[12px]">
+            <span className="text-[#FFF] text-center font-[Poppins] lg:text-[1rem] font-normal leading-[1.625rem] ml-[0.125rem] sm:text-[0.875rem]">
               info@yakBuckCoffee.com
             </span>
           </p>
         </div>
-        <div className="flex flex-col items-center">
-          <h5 className="text-[#FFF] text-center font-[Poppins] lg:text-[1.25rem] font-normal leading-[2rem] tracking-[0.1rem] sm:text-[12px]">
+        <div className="flex flex-col lg:mt-0 items-center sm:mt-16 md:mt-0">
+          <h5 className="text-[#FFF] text-center font-[Poppins] lg:text-[1.25rem] font-normal leading-[2rem] tracking-[0.1rem] sm:text-[1rem]">
             Namche Bazar, Solukhumbu
           </h5>
-          <h5 className="text-[#FFF] text-center font-[Poppins] lg:text-[1.25rem] font-normal leading-[2rem] tracking-[0.1rem] items-center sm:[12px]">
+          <h5 className="text-[#FFF] text-center font-[Poppins] lg:text-[1.25rem] font-normal leading-[2rem] tracking-[0.1rem] items-center sm:text-[1rem]">
             Nepal
           </h5>
-          <div className="lg:w-[7.5rem] lg:h-[7.5rem] flex-shrink-0 bg-[url('/images/logo.png')] bg-center bg-cover sm:w-[6rem] sm:h-[6rem]"></div>
+          <div className="lg:w-[7.5rem] lg:h-[7.5rem] flex-shrink-0 bg-[url('/images/logo.png')] bg-center bg-cover sm:w-[4rem] sm:h-[4rem]"></div>
         </div>
-        <div className="flex flex-col items-center">
-          <h4 className="self-stretch text-[#FFF] text-center font-[Poppins] lg:text-[1.5rem] font-medium leading-[2.4375rem] sm:[12px]">
+        <div className="flex flex-col items-center sm:mt-9 md:mt-0">
+          <h4 className="self-stretch text-[#FFF] text-center font-[Poppins] lg:text-[1.5rem] font-medium leading-[2.4375rem] sm:text-[1.25rem]">
             Follow Us
           </h4>
           <div className="flex">
-            <FaInstagram size="2.25rem" className="text-white" />
-            <FiFacebook size="2.25rem" className="text-white" />
+            <FaInstagram
+              size="2.25rem"
+              className="text-white sm:w-[1.5rem] sm:h-[1.5rem]"
+            />
+            <FiFacebook
+              size="2.25rem"
+              className="text-white sm:w-[1.5rem] sm:h-[1.5rem]"
+            />
           </div>
         </div>
       </div>
-      <div className="flex lg:w-8/12 items-center mx-auto align-middle gap-[0.125rem] mt-[1.5rem] ">
+      <div className="flex lg:w-8/12 lg:items-center mx-auto align-middle gap-[0.125rem]  mt-[1.5rem] sm:items-center sm:w-full sm:justify-center    md:flex-row">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="lg:w-[30.8125rem] h-[4.75rem] flex-shrink-0 fill-black sm:w-[10rem] "
+          className="lg:w-[30.8125rem] lg:h-[4.75rem] flex-shrink-0 fill-black sm:w-[100px] sm:h-[100px]"
           viewBox="0 0 493 76"
           fill="none"
         >
@@ -82,7 +88,7 @@ const Footer = () => {
         </svg>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="lg:w-[20.90625rem] h-[3.707125rem] flex-shrink-0 fill-black sm:w-[10rem]"
+          className="lg:w-[20.90625rem] lg:h-[3.707125rem] flex-shrink-0 fill-black sm:w-[100px] sm:h-[30px]"
           viewBox="0 0 335 60"
           fill="none"
         >
@@ -93,19 +99,19 @@ const Footer = () => {
         </svg>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="lg:w-[17rem] h-[7.3125rem] flex-shrink-0 fill-black mb-[0.5625rem] sm:w-[10rem] "
+          className=" sm:screen lg:w-[17rem] h-[7.3125rem] flex-shrink-0 fill-black mb-[0.5625rem] sm:w-[100px] sm:h-[50px]"
           viewBox="0 0 595 117"
         >
           <path d="M126.306 68.1121C97.9551 73.5101 30.2891 102.953 0 117L124.488 74.9869L152.657 85.9358L284.415 19.6061L304.042 36.9206L372.375 5.60174L454.337 65.4385L485.05 54.9989L553.746 97.1393L595 116.873L483.415 50.4157C477.66 53.0468 464.732 58.6146 459.062 59.8368C453.392 61.059 400.968 20.4548 375.464 0C352.687 11.0337 306.805 33.0248 305.496 32.7193C304.188 32.4137 290.897 21.728 284.415 16.4233L154.838 80.716C152.221 81.1234 134.726 72.4831 126.306 68.1121Z" />
         </svg>
       </div>
-      <div className="flex lg:justify-between lg:w-[91.67%] mx-auto mt-[1.5rem] sm:w-[100vw] sm:justify-between ">
-        <p className="text-[#929292] text-center font-[Poppins] lg:text-[1rem] font-normal leading-[1.625rem] sm:text-[12px]">
+      <div className="flex lg:justify-between lg:w-[91.67%] mx-auto mt-[1.5rem] sm:w-full sm:flex-col sm:items-center md:flex-row md:justify-evenly">
+        <p className="text-[#929292] text-center font-[Poppins] lg:text-[1rem] font-normal leading-[1.625rem] sm:text-[0.875rem]">
           &copy; 2025 Yak Buck Coffee. All rights reserved
         </p>
-        <p className="text-white text-center font-[Poppins] lg:text-[1rem] font-normal leading-[1.625rem] flex justify-between items-center sm:text-[12px]">
+        <p className="text-white text-center font-[Poppins] lg:text-[1rem] font-normal leading-[1.625rem] flex justify-between items-center sm:text-[0.875rem] sm:mt-2 md:mt-0">
           Designed and Developed By{" "}
-          <div className="w-[2.625rem] h-[0.8161875rem] bg-[url('/images/webx.png')] bg-gray-300 bg-cover bg-center lg:ml-[0.125rem] sm:mr-32 lg:mr-0"></div>
+          <div className="w-[2.625rem] h-[0.8161875rem] bg-[url('/images/webx.png')] bg-gray-300 bg-cover bg-center lg:ml-[0.125rem] sm:ml-2"></div>
         </p>
       </div>
     </div>

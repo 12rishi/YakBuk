@@ -11,13 +11,13 @@ import ThirdSection from "./Section/ThirdSection/ThirdSection";
 const Home = () => {
   return (
     <>
-      <div className="relative w-[100vw] min-h-screen bg-[#fff]   ">
+      <div className="relative w-full min-h-screen bg-[#fff]   ">
         {" "}
         {/* Main container */}
         <div className="top-0 w-full ">
           <Hero />
         </div>
-        {/* <div className="absolute top-[70rem] w-full">
+        <div className="absolute lg:top-[70rem] sm:top-[50rem] w-full">
           <SecondSection />
           <ThirdSection />
           <FourthSection />
@@ -25,7 +25,7 @@ const Home = () => {
           <SixthSection />
           <SeventhSection />
           <Footer />
-        </div> */}
+        </div>
       </div>
     </>
   );

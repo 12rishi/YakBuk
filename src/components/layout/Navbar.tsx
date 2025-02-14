@@ -1,16 +1,24 @@
 import { Divide } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // To control the menu open/close state
   const toggleMenu = () => setIsOpen(!isOpen);
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => (document.body.classList.remove = "no-scroll");
+  }, [isOpen]);
 
   return (
     <>
       <nav
-        className="flex sm:hidden lg:flex  justify-around items-center h-10 mx-auto  lg:w-[100vw]   lg:px-0  py-20  "
+        className="flex sm:hidden lg:flex justify-around items-center h-10 mx-auto  lg:w-[100vw]   lg:px-0  py-20  "
         style={{ zIndex: 2000 }}
       >
         <ul
@@ -39,8 +47,8 @@ const Navbar = () => {
         </ul>
       </nav>
       {isOpen == true ? (
-        <div className="sm:block lg:hidden w-[100vw] grid grid-rows-2 h-screen top-0 left-0 fixed  bg-[#ffff] text-black z-50 ">
-          <div className="flex justify-between px-6 w-full">
+        <div className="sm:block lg:hidden w-full grid grid-rows-2 h-full top-0 left-0 fixed  bg-[#ffff] text-black z-50  ">
+          <div className="flex justify-between p-9 w-full">
             <div>
               <Link
                 to="/"
@@ -49,8 +57,8 @@ const Navbar = () => {
                 <img
                   src="/images/logo.png"
                   alt="Logo"
-                  width="90px"
-                  height="90px"
+                  width="40px"
+                  height="40px"
                 />
               </Link>
             </div>
@@ -60,10 +68,11 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-          <div className="w-full h-full grid grid-rows-4 justify-items-center">
+          <div className="w-full h-[50%] grid grid-rows-4 justify-items-center mt-10">
             <Link to="/menu" className="hover:text-[#32ac72]">
               Menu
             </Link>
+
             <Link to="/about" className="hover:text-[#32ac72]">
               About Us
             </Link>
@@ -76,14 +85,14 @@ const Navbar = () => {
           </div>
         </div>
       ) : (
-        <div className=" sm:flex lg:hidden w-[100vw]   justify-between px-5 items-center">
+        <div className=" sm:flex lg:hidden w-full  justify-between px-5 items-center p-4">
           <div>
             <Link to="/" className=" lg:hidden sm:block ">
               <img
                 src="/images/logo.png"
                 alt="Logo"
-                width="90px"
-                height="90px"
+                width="40px"
+                height="40px"
               />
             </Link>
           </div>
