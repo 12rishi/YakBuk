@@ -53,7 +53,7 @@ const MenuOverview: React.FC<{ menuItems: MenuItems[] }> = ({ menuItems }) => {
         </h5>
         {menuOverView.map((val, index) => (
           <Link
-            to={index}
+            to={String(index)}
             smooth={true}
             duration={500}
             key={index}
@@ -65,7 +65,7 @@ const MenuOverview: React.FC<{ menuItems: MenuItems[] }> = ({ menuItems }) => {
         <div className="sm:grid grid-cols-3 lg:hidden gap-6 w-auto">
           {menuOverView.map((val, index) => (
             <Link
-              to={index}
+              to={String(index)}
               smooth={true}
               duration={500}
               key={index}
