@@ -6,7 +6,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Headroom } from "react-headroom";
 
 interface Items {
   itemName: string;
@@ -100,7 +99,7 @@ const MenuOverview: React.FC<{ menuItems: MenuItems[] }> = ({ menuItems }) => {
                       className="flex flex-col items-center p-4 mx-2 bg-y-300 bg-[#084525] justify-center " // Add mx-2 for horizontal gap
                     >
                       <div className="w-full flex  justify-center">
-                        <CupWithLogo />
+                        <CupWithLogo val={"menu"} />
                       </div>
                       <h3 className="self-stretch text-center text-[#ffff] font-poppins text-[1.75rem] font-medium leading-[2.813rem] ">
                         {val.itemName}

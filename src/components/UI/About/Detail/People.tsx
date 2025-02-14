@@ -1,4 +1,3 @@
-import { DiVim } from "react-icons/di";
 import AboutDetailType from "../../../../types/type";
 
 const People: React.FC<{ detailArr: AboutDetailType[] }> = ({ detailArr }) => {

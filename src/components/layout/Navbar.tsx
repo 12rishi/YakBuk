@@ -4,15 +4,14 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); // To control the menu open/close state
+  const [isOpen, setIsOpen] = useState<boolean>(false); // To control the menu open/close state
   const toggleMenu = () => setIsOpen(!isOpen);
-  useEffect(() => {
+  useEffect((): any => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
-    return () => (document.body.classList.remove = "no-scroll");
   }, [isOpen]);
 
   return (
